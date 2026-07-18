@@ -16,10 +16,26 @@ Số học viên đạt (điểm >= 5).
     let number = diemLop.length;
     console.log("Số lượng học viên trong lớp:", number)
     let total = 0;
-    let max = diemLop [0];
-    let min = diemLop [0];
+    let max = diemLop[0];
+    let min = diemLop[0];
     let soHocVienDat = 0;
-
+    for (let i = 0; i < diemLop.length; i++) {
+        let diemNhapVao = diemLop[i];
+        total += diemNhapVao;
+        if (diemNhapVao > max) {
+            diemNhapVao = max;
+        } if ( diemNhapVao < min) {
+            diemNhapVao = min;
+        } if ( diemNhapVao >= 5) {
+            soHocVienDat++;
+        }
+    }
+    let diemTrungBinh = total / number;
+    console.log()
+    console.log()
+    console.log()
+    console.log()
+    console.log()
 
 
 </script>
