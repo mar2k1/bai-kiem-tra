@@ -13,11 +13,14 @@ diem < 5.0  →  "Yếu"
 In kết quả bằng console.log(), mở file bằng trình duyệt rồi xem ở Console.
 -->
 <script>
-    let diem = +prompt("Nhập điểm của bạn");
+    let diem = parseFloat(prompt("Nhập điểm của bạn"));
     if (diem >= 8.0) {
         console.log("Giỏi")
-    } else if (diem < 8.0; diem >=6.5)
-
+    } else if ( diem >= 6.5) {
+        console.log("Trung bình")
+    } else if ( diem >= 5) {
+        console.log("Yếu")
+    }
 </script>
 </body>
 </html>
