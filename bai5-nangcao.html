@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Sử dụng prompṭ() cho người dùng nhập số lượng phần tử n của mảng.
+Sau đó nhập n số nguyên vào mảng. Hãy in ra tất cả các số nguyên tố có trong mảng
+và tổng của chúng.
+-->
+<script>
+    let n = parseFloat(prompt("Nhập số lượng số nguyên tố"));
+    let mang = [];
+    console.log("Các số nguyên tố trong mảng là:");
+    for (let i = 0; i < n; i++) {
+        let songuyento = +prompt("Nhập số thứ" + (i + 1) + ":");
+        mang.push(songuyento);
+    }
+    let tong = 0;
+    for (let i = 0; i < mang.length; i++) {
+        let soNhapVao = mang[i];
+        if (soNhapVao > 1) {
+            let laSNT = true;
+            for (let j = 2; j < soNhapVao ; j++) {
+                if (soNhapVao % j === 0) {
+                    laSNT = false;
+                    break;
+                }
+            }
+            if (laSNT === true);
+            console.log(soNhapVao);
+            tong += soNhapVao;
+        }
+        
+    }
+    console.log("Tổng các SNT là:", tong)
+</script>
+</body>
+</html>
